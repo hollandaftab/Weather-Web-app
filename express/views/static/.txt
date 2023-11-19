@@ -1,0 +1,15 @@
+<button class="btn">Button 1</button>
+<button class="btn">Button 2</button>
+<button class="btn">Button 3</button>
+<button class="btn">Button 4</button>
+
+<script>
+let buttons = document.querySelectorAll(".btn");
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', function() {
+    alert(this.innerText + " clicked");
+  });
+}
+
+</script>
